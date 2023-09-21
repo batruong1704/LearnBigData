@@ -23,10 +23,12 @@ Thoát bằng cách gõ Ctrl + C
 ![image](https://github.com/batruong1704/LearnBigData/assets/142201301/db95ab18-b667-4424-ae3d-1bc61fb96cb6)
 Tại đây sẽ hiển thị web UI của spark, Ctrl rồi click vào link để theo dõi.
 - Cài panda:
-  chạy flie : get-pip.py
+  ```
+  python get-pip.py
   pip install pandas
   pip install openpyxl
-  xong rùi á :(((
+  ```
+  xong rùi á ❤️❤️❤️
   
 # B. Learn BigData
 1. **Khởi tạo SparkSession**:
