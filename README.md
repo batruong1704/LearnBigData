@@ -1,6 +1,28 @@
-# Learn BigData
-
-
+# A. Setup
+#### Environment Variables:
+- HADOOP_HOME- C:\hadoop
+- JAVA_HOME- C:\java\jdk
+- SPARK_HOME- C:\spark\spark-3.3.1-bin-hadoop2
+- PYTHONPATH- %SPARK_HOME%\python;%SPARK_HOME%\python\lib\py4j-0.10.9-src;%PYTHONPATH%
+- PYSPARK_HOME- C:\Users\84336\AppData\Local\Programs\Python\Python38\python.exe
+#### Required Paths:
+- %SPARK_HOME%\bin
+- %HADOOP_HOME%\bin
+- %JAVA_HOME%\bin
+#### Check:
+- Mở cmd, sau đó gõ:
+   ```cmd
+   spark-shell
+   ```
+![image](https://github.com/batruong1704/LearnBigData/assets/142201301/54620c30-a071-468a-b170-2b81500fec6c)
+Thoát bằng cách gõ Ctrl + C
+- Mở Web UI:
+   ```cmd
+   pyspark
+   ```
+![image](https://github.com/batruong1704/LearnBigData/assets/142201301/db95ab18-b667-4424-ae3d-1bc61fb96cb6)
+Tại đây sẽ hiển thị web UI của spark, Ctrl rồi click vào link để theo dõi.
+# B. Learn BigData
 1. **Khởi tạo SparkSession**:
    ```python
    from pyspark.sql import SparkSession
