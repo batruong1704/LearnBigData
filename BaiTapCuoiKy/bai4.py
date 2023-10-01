@@ -6,9 +6,9 @@ import pandas as pd
 spark = SparkSession.builder.appName("FlightAnalysis").getOrCreate()
 
 file_paths = [
-    "C:/PySpark/LearnBigData/Data/Flight_012015.xlsx",
-    "C:/PySpark/LearnBigData/Data/Flight_022015.xlsx",
-    "C:/PySpark/LearnBigData/Data/Flight_032015.xlsx"
+    "C:/PySpark/LearnBigData/DataStreaming/Flight_012015.csv",
+    "C:/PySpark/LearnBigData/DataStreaming/Flight_022015.csv",
+    "C:/PySpark/LearnBigData/DataStreaming/Flight_032015.csv"
 ]
 
 dfs = [pd.read_excel(file_path) for file_path in file_paths]

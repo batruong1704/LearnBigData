@@ -47,7 +47,7 @@ def main():
         spark.readStream.schema(schema)
         .option("header", "true")
         .format("csv")
-        .option("path", "C:/Users/minhs/Desktop/DemoBigdata/data/")
+        .option("path", "C:/PySpark/LearnBigData/Data")
         .load()
     )
 
