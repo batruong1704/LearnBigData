@@ -1,6 +1,0 @@
-Câu 3. Sử dụng file vdv_olympics, qg_noc.csv
-3.1. Cho biết schema của bộ dữ liệu, hiển thị số bản ghi của bộ dữ liệu.
-3.2. Đưa ra thông tin về các vận động viên Việt Nam tham gia Olympic trong thập kỷ 2000.
-3.3. Đưa ra thông tin về 7 quốc gia có số lượng vận đông viên đông nhất tham gia thế vận hội 2016
-3.4. Cho biết số lượng vận động viên tham dự 5 kỳ thế vận hội gần nhất
-3.5. Cho biết số lượng vận động viên nam tại mỗi kỳ thế vận hội trong thế kỷ 21

@@ -1,0 +1,9 @@
+Bài tập thực hành Spark:
+Câu 1. Sử dụng file ex1.csv
+1. Có tổng bao nhiêu giao dịch, sản phẩm và khách hàng khác nhau?
+2. Đưa ra tỉ lệ khách hàng không có thông tin
+3. Đâu là nước có số lượng đơn hàng (Quantity) nhiều thứ 3?
+4. Từ nào xuất hiện ít nhất trong phần Description?
+5. Sản phẩm nào bán được số lượng (Quantity) lớn nhất ở United Kingdom?
+
+
