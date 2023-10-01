@@ -13,4 +13,4 @@ data = data.withColumn("Date", split_col[1])
 
 data = data.drop("Account")
 data = data.withColumn("Date", to_date(data["Date"], "MM/dd/yyyy"))
-data.orderBy(data["Date"]).show(data.count())
+data.orderBy(data["Date"]).show(1)
