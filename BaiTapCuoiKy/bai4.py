@@ -23,8 +23,6 @@ top_airlines = flight_df \
     .orderBy(desc("flight_count")) \
     .limit(3)
 
-top_airlines.show()
-
 query = top_airlines.writeStream \
     .outputMode("complete") \
     .format("console") \
