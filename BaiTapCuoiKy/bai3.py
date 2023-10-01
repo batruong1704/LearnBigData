@@ -49,7 +49,7 @@ max_fans = data.groupBy("Country").agg(max("Fans").alias("Fan_max"))
 data.join(max_fans,data.Fans==max_fans.Fan_max).select("UserId","Name","Fans").show(truncate=False)
 print                   ("--------------Câu 3.3-----------------")
 #3.3. Liệt kê các năm gia nhập của các Tiktoker?
-data.select("UserId","Name", year("Date").alias("Năm gia nhập")).show(data.count(),truncate=False)
+data.select("UserId","Name", year("Date").alias("Năm gia nhập")).show(data.count(), truncate=False)
 
 
 print("--------------Câu 3.4-----------------")
