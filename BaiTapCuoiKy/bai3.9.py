@@ -1,6 +1,6 @@
 import pyspark
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import split,to_date,regexp_replace,col,max,year,desc,when,expr,abs, regexp_extract, format_number
+from pyspark.sql.functions import when
 from pyspark.sql.types import DateType
 
 spark = SparkSession.builder.appName("BigData-Nhom7").getOrCreate()
