@@ -33,7 +33,7 @@ def main():
             StructField("TAXI_IN", IntegerType(), True),
             StructField("SCHEDULED_ARRIVAL", IntegerType(), True),
             StructField("ARRIVAL_TIME", IntegerType(), True),
-            StructField("ARRIVAL_DELAY", IntegerType(), True), 
+            StructField("ARRIVAL_DELAY", IntegerType(), True),
             StructField("DIVERTED", IntegerType(), True),
             StructField("CANCELLED", StringType(), True),
             StructField("CANCELLATION_REASON", IntegerType(), True),
@@ -42,8 +42,6 @@ def main():
             StructField("AIRLINE_DELAY", IntegerType(), True),
             StructField("LATE_AIRCRAFT_DELAY", IntegerType(), True),
             StructField("WEATHER_DELAY", IntegerType(), True),
-            StructField("AIR_SYSTEM_DELAY", IntegerType(), True),
-            StructField("SECURITY_DELAY", IntegerType(), True),
         ]
     )
 
@@ -51,7 +49,7 @@ def main():
         spark.readStream.schema(schema)
         .option("header", "true")
         .format("csv")
-        .option("path", "C:/PySpark/LearnBigData/DataStreaming")
+        .option("path", "C:/PySpark/LearnBigData/DataStreaming/")
         .load()
     )
 
@@ -60,14 +58,13 @@ def main():
     top_airlines = df \
         .filter((col("YEAR") == 2015) & (col("MONTH").isin([1, 2, 3]))) \
         .groupBy("AIRLINE") \
-        .agg(count("*").alias("flight_count")) \
-        .orderBy(desc("flight_count")) \
+        .agg(count("*").alias("count")) \
+        .orderBy(desc("count")) \
         .limit(3)
 
     query = top_airlines.writeStream.format("console").outputMode("complete").start()
 
-    query.awaitTermination()    
-
+    query.awaitTermination()
 
 if __name__ == "__main__":
     main()
